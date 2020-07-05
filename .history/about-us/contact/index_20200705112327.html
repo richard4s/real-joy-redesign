@@ -204,83 +204,40 @@ class=bt_bb_contact_form_7><div
 role=form class=wpcf7 id=wpcf7-f1521-p13-o1 lang=en-US dir=ltr><div
 class=screen-reader-response></div>
 
-<form id="my-form" action="https://formspree.io/xwkrrbkl" method="POST">
+<form action=http://tabula.bold-themes.com/sunny/about-us/contact/#wpcf7-f1521-p13-o1 method=post class=wpcf7-form novalidate=novalidate>
+	<div style="display: none;">
+		<input type=hidden name=_wpcf7 value=1521>
+		<input type=hidden name=_wpcf7_version value=5.1.6>
+		<input type=hidden name=_wpcf7_locale value=en_US>
+		<input type=hidden name=_wpcf7_unit_tag value=wpcf7-f1521-p13-o1>
+		<input type=hidden name=_wpcf7_container_post value=13>
+	</div>
 	<div class=btContact>
 		<div class=btContactRow>
 			<div class=btContactName>
 				<span class="icon icon_name"></span>
 				<span class="wpcf7-form-control-wrap your-name">
-					<input type="text" name="name" size=40 class="wpcf7-form-control wpcf7-text " required placeholder=Name>
+					<input ype=text name=your-name value size=40 class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required=true aria-invalid=false placeholder=Name>
 				</span>
 			</div>
 			<div class=btContactEmail>
 				<span class="icon icon_email"></span>
 				<span class="wpcf7-form-control-wrap your-email">
-					<input type="email" name="email" required size=40 class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email"  placeholder=E-mail></span></div></div>
-					<div class=btContactRow>
-						<div class=btContactMessage>
+					<input type=email name=your-email value size=40 class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required=true aria-invalid=false placeholder=E-mail></span></div></div>
+					<div class=btContactRow><div class=btContactMessage>
 						<span class="icon icon_message"></span>
 						<span class="wpcf7-form-control-wrap your-message">
-							<textarea name="message" cols=40 rows=10 class="wpcf7-form-control wpcf7-textarea" required placeholder=Message>
+							<textarea name=your-message cols=40 rows=10 class="wpcf7-form-control wpcf7-textarea" aria-invalid=false placeholder=Message>
 							</textarea>
 						</span>
 					</div>
 				</div>
 			<div class="btContactButton btFullWidth">
-				<input id="my-form-button" type="submit" value=SEND class="wpcf7-form-control wpcf7-submit">
+				<input type=submit value=SEND class="wpcf7-form-control wpcf7-submit">
 			</div>
-			<p id="my-form-status"></p>
 		</div>
+	<div class="wpcf7-response-output wpcf7-display-none"></div>
 </form>
-
-
-<script>
-	window.addEventListener("DOMContentLoaded", function() {
-  
-	  // get the form elements defined in your form HTML above
-	  
-	  var form = document.getElementById("my-form");
-	  var button = document.getElementById("my-form-button");
-	  var status = document.getElementById("my-form-status");
-  
-	  // Success and Error functions for after the form is submitted
-	  
-	  function success() {
-		form.reset();
-		button.style = "display: none ";
-		status.innerHTML = "Thanks!";
-	  }
-  
-	  function error() {
-		status.innerHTML = "Oops! There was a problem.";
-	  }
-  
-	  // handle the form submission event
-  
-	  form.addEventListener("submit", function(ev) {
-		ev.preventDefault();
-		var data = new FormData(form);
-		ajax(form.method, form.action, data, success, error);
-	  });
-	});
-	
-	// helper function for sending an AJAX request
-  
-	function ajax(method, url, data, success, error) {
-	  var xhr = new XMLHttpRequest();
-	  xhr.open(method, url);
-	  xhr.setRequestHeader("Accept", "application/json");
-	  xhr.onreadystatechange = function() {
-		if (xhr.readyState !== XMLHttpRequest.DONE) return;
-		if (xhr.status === 200) {
-		  success(xhr.response, xhr.responseType);
-		} else {
-		  error(xhr.status, xhr.response, xhr.responseType);
-		}
-	  };
-	  xhr.send(data);
-	}
-  </script>
 
 </div></div><div
 class="bt_bb_separator bt_bb_bottom_spacing_large bt_bb_border_style_none"></div></div></div></div></div></div></div></div></div></section><section
